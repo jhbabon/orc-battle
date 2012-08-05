@@ -1,4 +1,4 @@
-orc-battle
-==========
+The Orc Battle Game
+===================
 
-The Orc Battle Game from The Land of Lisp book
+From The Land of Lisp book.
