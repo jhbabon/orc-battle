@@ -39,7 +39,8 @@
   (princ ", an agility of ")
   (princ *player-agility*)
   (princ ", and a strength of ")
-  (princ *player-strength*))
+  (princ *player-strength*)
+  (princ "."))
 
 (defun player-attack ()
   (fresh-line)
@@ -64,7 +65,8 @@
 (defun player-roundhouse-attack ()
   (dotimes (x (1+ (randval (truncate (/ *player-strength* 3)))))
     (unless (monsters-dead)
-      (monster-hit (random-monster) 1))))
+      (monster-hit (random-monster) 1)
+      (princ " "))))
 
 ;; Monsters management functions
 (defun init-monsters ()
